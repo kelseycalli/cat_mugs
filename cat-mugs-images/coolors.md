@@ -1,0 +1,1 @@
+https://coolors.co/f5bb6e-fefefd-f4a48b-f9e6c9-faefe2-fdfdfe-fcf5f0-ffd1c2-a45938-713b26

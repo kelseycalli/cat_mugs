@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Details Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-light fixed-top" style="background-color: #F9E6C9;">
+            <div class="container-fluid">
+                <a class="navbar-brand h1 m-3" href="#"></a>
+                <a href="#shopping-cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                        class="bi bi-cart-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                    </svg>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <img src="cat-mugs-images/cat-mugs-logo.jpeg" class="img-fluid" alt="...">
+                </div>
+            </div>
+
+            <div class="row my-2">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="col-12 my-3">
+                                <div class="row">
+                                    <div class="col-12 col-sm-6 text-center">
+                                        <h5>Cat Mug 1</h5>
+                                        <h6>£10</h6>
+                                        <button type="button" class="btn">Add to cart</button>
+                                    </div>
+                                    <div class="col-12 col-sm-6 text-center">
+                                        <img src="cat-mugs-images/cat-mug-1.png" class="img-thumbnail"
+                                            alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="col-12 my-3">
+                                <div class="row">
+                                    <div class="col-12 col-sm-6 text-center">
+                                        <h5>Cat Mug 2</h5>
+                                        <h6>£10</h6>
+                                        <button type="button" class="btn">Add to cart</button>
+                                    </div>
+                                    <div class="col-12 col-sm-6 text-center">
+                                        <img src="cat-mugs-images/cat-mug-2.png" class="img-thumbnail"
+                                            alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="col-12 my-3">
+                                <div class="row">
+                                    <div class="col-12 col-sm-6 text-center">
+                                        <h5>Cat Mug 3</h5>
+                                        <h6>£10</h6>
+                                        <button type="button" class="btn">Add to cart</button>
+                                    </div>
+                                    <div class="col-12 col-sm-6 text-center">
+                                        <img src="cat-mugs-images/cat-mug-3.png" class="img-thumbnail"
+                                            alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="col-12 my-3">
+                                <div class="row">
+                                    <div class="col-12 col-sm-6 text-center">
+                                        <h5>Cat Mug 4</h5>
+                                        <h6>£10</h6>
+                                        <button type="button" class="btn">Add to cart</button>
+                                    </div>
+                                    <div class="col-12 col-sm-6 text-center">
+                                        <img src="cat-mugs-images/cat-mug-4.png" class="img-thumbnail"
+                                            alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Shopping Cart containing added items, quantity, remove button, total price, place order button -->
+            <div class="row justify-content-between">
+                <div class="col-12 col-md-7 p-4 your-cart">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-12 text-center mb-2">
+                                <h5>Your Cart</h5>
+                            </div>
+                        </div>
+                        <div id="shopping-cart"></div>
+                        <div class="row my-1">
+                            <div class="col-3 offset-1">Cat Mug 1</div>
+                            <div class="col-3">£10</div>
+                            <div class="col-4">
+                                <button id="decrement-1" type="button" class="btn">-</button>
+                                <span id="counter-value-1" class="fw-bold mx-2 text-center">0</span>
+                                <button id="increment-1" type="button" class="btn">+</button>
+                                <button id="remove-1" class="btn" type="button">Remove</button>
+                            </div>
+                        </div>
+                        <div class="row my-1">
+                            <div class="col-3 offset-1">Cat Mug 2</div>
+                            <div class="col-3">£10</div>
+                            <div class="col-4">
+                                <button id="decrement-2" type="button" class="btn">-</button>
+                                <span id="counter-value-2" class="fw-bold mx-2 text-center">0</span>
+                                <button id="increment-2" type="button" class="btn">+</button>
+                                <button id="remove-2" class="btn" type="button">Remove</button>
+                            </div>
+                        </div>
+                        <div class="row my-1">
+                            <div class="col-3 offset-1">Cat Mug 3</div>
+                            <div class="col-3">£10</div>
+                            <div class="col-4">
+                                <button id="decrement-3" type="button" class="btn">-</button>
+                                <span id="counter-value-3" class="fw-bold mx-2 text-center">0</span>
+                                <button id="increment-3" type="button" class="btn">+</button>
+                                <button id="remove-3" class="btn" type="button">Remove</button>
+                            </div>
+                        </div>
+                        <div class="row my-1">
+                            <div class="col-3 offset-1">Cat Mug 4</div>
+                            <div class="col-3">£10</div>
+                            <div class="col-4">
+                                <button id="decrement-4" type="button" class="btn">-</button>
+                                <span id="counter-value-4" class="fw-bold mx-2 text-center">0</span>
+                                <button id="increment-4" type="button" class="btn">+</button>
+                                <button id="remove-4" class="btn" type="button">Remove</button>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-3 offset-1 fw-bold">Total</div>
+                            <div id="cart-total" class="col-3">0</div>
+                            <div class="col-4 text-center">
+                                <button type="button" class="btn">Place order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4" id="payment-details">
+                    <form id="cardForm" action="" novalidate>
+                        <div class="col-10 offset-1">
+                            <div class="row mb-1 mt-4">
+                                <div class="col-12">Cardholder Name</div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-12">
+                                    <input id="fullName" type="text" class="form-control" placeholder="Full Name"
+                                        aria-label="name" required>
+                                    <div class="invalid-feedback" id="name-feedback"></div>
+                                </div>
+                            </div>
+                            <div class="row mb-1">
+                                <div class="col-12">Card Number</div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-12">
+                                    <input id="cardNumber" type="number" class="form-control"
+                                        placeholder="1234 5678 9100 0000" aria-label="card-number" required>
+                                    <div class="invalid-feedback" id="card-number-feedback"></div>
+                                </div>
+                            </div>
+                            <div class="row mb-1">
+                                <div class="col-8">Expiry Date</div>
+                                <div class="col-4">CVC</div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-4">
+                                    <input id="expMonth" type="number" class="form-control" placeholder="MM"
+                                        aria-label="month-number" required>
+                                    <div class="invalid-feedback" id="month-feedback"></div>
+                                </div>
+                                <div class="col-4">
+                                    <input id="expYear" type="number" class="form-control" placeholder="YY"
+                                        aria-label="year-number" required>
+                                    <div class="invalid-feedback" id="year-feedback"></div>
+                                </div>
+                                <div class="col-4">
+                                    <input id="cvcNumber" type="number" class="form-control" placeholder="123"
+                                        aria-label="cvc-number" required>
+                                    <div class="invalid-feedback" id="cvc-feedback"></div>
+                                </div>
+                            </div>
+                            <div class="row mb-4">
+                                <div class="col-12">
+                                    <div class="d-grid gap-2">
+                                        <button class="btn" type="submit">Confirm</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="fixed-bottom">
+        <div class="container">
+            <div class="row align-items-center justify-content-center mt-2">
+                <div class="col-3 text-center"><a href="http://">Privacy Policy</a></div>
+                <div class="col-3 text-center"><a href="http://">Terms & Conditions</a></div>
+                <div class="col-3 text-center"><a href="http://">Returns Information</a></div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Script -->
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+body {
+    background-color: #babbb8;
+}
+
+.fixed-bottom {
+    background-color: #F9E6C9;
+    height: 82px;
+}
+
+main {
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.btn {
+    background-color: #F5BB6E !important;
+}
+
+.btn:hover {
+    background-color: #F9E6C9 !important;
+}
+
+a {
+    color: #713B26 !important;
+}
+a:hover {
+    color: #A45938 !important;
+}
+
+.your-cart, #payment-details {
+    background-color: #FAEFE2;
+    border-radius: 10px;
+}
