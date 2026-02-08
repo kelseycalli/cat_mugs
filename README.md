@@ -10,10 +10,10 @@ payment details validation:
 * prevent default on submission
 * if numbers entered do not meet submission criteria; validation message
 * submission criteria:
-** name can only be letters
-** card number must only be 16 digits (UI push; can we put spaces between every 4?)
-** expiry date only 2 numbers in each
-** cvc number can only be 3 numbers
+  * name can only be letters
+  * card number must only be 16 digits (UI push; can we put spaces between every 4?)
+  * expiry date only 2 numbers in each
+  * cvc number can only be 3 numbers
 * clear form after submission and pop up with success!
 * push goal: payment details only visible once place order clicked?
 * push: pop up for success?
